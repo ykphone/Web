@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>공고문 페이지</title>
+    <style>
+      /* 전체 공통 스타일 */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        background-color: #fff; /* 전체 배경 흰색 기본 */
+      }
+
+      .container {
+        max-width: 1200px; /* 웹 최대 폭 유지 */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* 검은 배경 섹션 */
+      .section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        align-items: center;
+        background-color: #000; /* 검정 배경 */
+      }
+
+      /* 흰색 배경 섹션 */
+      .section-white {
+        width: 100%;
+        background-color: #fff;
+        padding: 60px 20px;
+        box-sizing: border-box;
+      }
+
+      img {
+        width: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        height: auto;
+        display: block;
+      }
+
+      .flex-row {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .flex-row img {
+        flex: 1 1 100px; /* 최소 100px, 최대 화면 폭까지 확장 */
+        max-width: 200px;
+      }
+
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 40px;
+        width: 100%;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+      }
+
+      .gap-15 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+      }
+
+      .gap-50 {
+        margin: 50px 0;
+      }
+
+      .gap-100 {
+        margin: 100px 0;
+      }
+
+      .flex-between {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 22px;
+        flex-wrap: wrap;
+      }
+
+      /* 모바일 반응형 */
+      @media screen and (max-width: 768px) {
+        .section {
+          gap: 20px;
+          padding: 20px 10px;
+        }
+
+        .flex-row img {
+          max-width: 45%; /* 모바일에서는 두 장씩 배치 */
+        }
+
+        .flex-between img {
+          max-width: 48%;
+        }
+
+        .section-white {
+          padding: 30px 10px;
+        }
+
+        .gap-100 {
+          margin: 50px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 검은 배경 섹션 -->
+      <div class="section">
+        <img src="https://i.postimg.cc/k5Km1pjf/image.png" alt="POST" />
+        <img
+          src="https://i.postimg.cc/J04Ch4R2/image.png"
+          alt="POST"
+          style="width: 80%"
+        />
+        <img src="https://i.postimg.cc/wTZZCkRP/Group-14.png" alt="POST" />
+        <img src="https://i.postimg.cc/xC5BBDLy/image.png" alt="POST" />
+
+        <div class="flex-row">
+          <a href="https://www.yeopkerphone.com/"
+            ><img src="https://i.postimg.cc/WtL3TRBh/Group-1.png" alt="POST"
+          /></a>
+          <a href="https://cafe.naver.com/09tellecom"
+            ><img src="https://i.postimg.cc/BnNKcbWp/Group-2.png" alt="POST"
+          /></a>
+          <a href="https://www.youtube.com/@next_town_phone"
+            ><img src="https://i.postimg.cc/jj5J8Ttb/Group-3.png" alt="POST"
+          /></a>
+          <a href="https://www.ykapp.kr/"
+            ><img src="https://i.postimg.cc/nr8jcQ7F/Group-4.png" alt="POST"
+          /></a>
+        </div>
+      </div>
+
+      <!-- 흰색 섹션 -->
+      <div class="section-white">
+        <div class="gap-15">
+          <img
+            src="https://i.postimg.cc/d17FNHh3/Rectangle-107.png"
+            alt="POST"
+          />
+          <img
+            src="https://i.postimg.cc/fRFBj8QB/Rectangle-108.png"
+            alt="POST"
+          />
+          <img
+            src="https://i.postimg.cc/XqQgZ8gK/Rectangle-109.png"
+            alt="POST"
+          />
+        </div>
+
+        <div class="gap-100">
+          <img src="https://i.postimg.cc/XvcPyS1S/Group-15.png" alt="POST" />
+        </div>
+        <div class="gap-100">
+          <img src="https://i.postimg.cc/0QyVM6JD/Group-16.png" alt="POST" />
+        </div>
+        <div class="gap-100">
+          <img src="https://i.postimg.cc/6pxzVbv9/Group-17.png" alt="POST" />
+        </div>
+        <div class="gap-100">
+          <img src="https://i.postimg.cc/zBvkD99k/Group-18.png" alt="POST" />
+        </div>
+        <div class="gap-100">
+          <img src="https://i.postimg.cc/2jqP2JVv/Group-19.png" alt="POST" />
+        </div>
+      </div>
+
+      <div class="section-white">
+        <div class="gap-15">
+          <img
+            src="https://i.postimg.cc/ZYGNcXW9/Rectangle-118.png"
+            alt="POST"
+          />
+          <img
+            src="https://i.postimg.cc/nzssK1ZY/Rectangle-119.png"
+            alt="POST"
+          />
+          <img src="https://i.postimg.cc/hP0GdYTR/Group-5-1.png" alt="POST" />
+        </div>
+
+        <div class="video-container" style="margin-bottom: 30px">
+          <iframe
+            src="https://www.youtube.com/embed/khgeTA3MxqQ?si=EY01cfOlxTUl_v2V"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/sZwKW-X--Xc?si=JO8tZwTA6X3Hod17"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="gap-50">
+          <img
+            src="https://i.postimg.cc/76p98VNm/Rectangle-110.png"
+            alt="POST"
+          />
+        </div>
+
+        <div class="flex-between">
+          <img src="https://i.postimg.cc/wjGsGB2k/image.png" alt="POST" />
+          <img src="https://i.postimg.cc/KjxKM3cm/image-1.png" alt="POST" />
+        </div>
+
+        <div class="gap-50">
+          <img src="https://i.postimg.cc/L8wnVb4C/image.png" alt="POST" />
+        </div>
+      </div>
+
+      <!-- 마지막 검은 섹션 -->
+      <div class="section" style="padding: 30px 0">
+        <img src="https://i.postimg.cc/KYhmjS82/Group-12.png" alt="POST" />
+      </div>
+    </div>
+  </body>
+</html>
